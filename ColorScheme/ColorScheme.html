@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="ColorSchemeStyle.css">
+</head>
+<body>
+    <div class="parent-box">
+        <div class="child-box" id = "violet"></div>
+        <div class="child-box" id = "blue"></div>
+        <div class="child-box" id = "green"></div>
+        <div class="child-box" id = "red"></div>
+        <div class="child-box" id = "white"></div>
+        
+    </div>
+    <div class="title"> Click on the color to turn the bg with same color</div>
+    <script>
+
+        const turnBackGroundOn = (bgcolor) =>{
+            document.body.style.backgroundColor = bgcolor;
+            
+        }
+        //const colorArr=[];
+        //HTML Collection
+        // const parent = document.querySelector('.parent-box');
+        // console.log(parent.children)
+        // returns nodelist 
+        // const childBoxes = document.querySelectorAll('.child-box');
+
+         const childBoxes = document.querySelectorAll('.child-box');
+         childBoxes.forEach( childbox=>{
+                childbox.addEventListener('click', e=>{
+                    turnBackGroundOn(e.target.id);
+                })
+            })
+       
+
+
+
+
+
+    </script>
+</body>
+</html>

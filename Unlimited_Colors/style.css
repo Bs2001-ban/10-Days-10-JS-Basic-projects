@@ -1,0 +1,74 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: #fff;
+}
+
+/* Heading */
+#color {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Buttons container spacing */
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 220px;
+}
+
+/* Individual button styles */
+#startWithRandom {
+    background: #4caf50;
+    color: white;
+}
+
+#startWithRandom:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+#startWithTraditional {
+    background: #2196f3;
+    color: white;
+}
+
+#startWithTraditional:hover {
+    background: #1e88e5;
+    transform: scale(1.05);
+}
+
+#stop {
+    background: #f44336;
+    color: white;
+}
+
+#stop:hover {
+    background: #e53935;
+    transform: scale(1.05);
+}
+
+/* Optional: glow effect */
+button:active {
+    transform: scale(0.98);
+}
